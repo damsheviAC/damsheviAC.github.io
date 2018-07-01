@@ -1,0 +1,108 @@
+/*header*/
+header {
+  font-family: CenturyGothic;
+  padding-top: 77px;
+  margin-bottom: 68px;
+}
+header h1 {
+  font-size: 35px;
+}
+header h2 {
+  font-size: 24px;
+}
+
+
+/* Portfolio menu */
+.portfolio-menu {
+  padding-left: 135px !important;
+  font-family: CenturyGothic;
+  margin-bottom: 40px !important;
+}
+.portfolio-menu a {
+  color: #424146;
+  line-height: 48px;
+  padding: 0 20px;
+}
+.portfolio-menu .active {
+  background-color: #ffea00;
+}
+
+/* Portfolio */
+.portfolio>div {
+    margin-bottom: 60px !important;
+}
+.portfolio-img  img{
+  width: 100%;
+}
+.portfolio-img {
+  position: relative;
+}
+.portfolio-img .arrow {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-transition: All 0.5s ease-out 0.5s;
+  -moz-transition: All 0.5s ease-out 0.5s;
+  -o-transition: All 0.5s ease-out 0.5s;
+  transition: All 0.5s ease-out 0.5s;
+}
+#img-1:hover .arrow {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-2:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-3:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-4:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-5:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-6:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-7:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-8:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+#img-9:hover img {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+/*Portfolio-menu*/
+  .portfolio-menu {
+    padding-left: 109px !important;
+  }
+
+}
+
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+/*Portfolio-menu*/
+  .portfolio-menu {
+    padding-left: 63px !important;
+  }
+}

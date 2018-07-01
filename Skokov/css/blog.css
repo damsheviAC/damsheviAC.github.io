@@ -1,0 +1,87 @@
+/*Blockquote*/
+#blog {
+  padding-top: 78px;
+}
+#blog blockquote {
+  background-color: #ffea00;
+  font-family: CenturyGothic;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+#blog blockquote p {
+  padding: 12px 46px 0 44px;
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 0 !important;
+}
+#blog blockquote footer {
+  font-size: 11px;
+  padding-right: 10px;
+}
+
+/*News*/
+.news {
+  font-family: CenturyGothic;
+  margin-bottom: 30px;
+}
+.news-img {
+  width: 100%;
+}
+.news-body {
+  position: relative;
+  background-color: #ffea00;
+  padding: 25px 33px 26px 25px;
+}
+.news-text {
+  display: none;
+  font-size: 14px;
+}
+#news1:hover .news-text {
+  display: block;
+}
+#news2:hover .news-text {
+  display: block;
+}
+#news3:hover .news-text {
+  display: block;
+}
+#news4:hover .news-text {
+  display: block;
+}
+#news5:hover .news-text {
+  display: block;
+}
+#news6:hover .news-text {
+  display: block;
+}
+#news7:hover .news-text {
+  display: block;
+}
+.corner {
+  top: -9px;
+  left: 82%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #ffea00;
+  transform: rotate(45deg);
+}
+.news-head {
+  font-size: 23px;
+  font-weight: bold;
+}
+.news footer img {
+  display: inline-block !important;
+}
+.news footer p {
+  display: inline-block !important;
+}
+.like {
+  font-size: 12px;
+}
+.news-info {
+  white-space: pre;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
