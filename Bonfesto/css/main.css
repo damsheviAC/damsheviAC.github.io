@@ -1,0 +1,92 @@
+/*Fonts*/
+@font-face {
+ font-family: Exo2Medium;
+ src: url('../fonts/Exo2-Medium.otf');
+}
+@font-face {
+ font-family: HelveticaNeueLight;
+ src: url('../fonts/HelveticaNeue-Light.ttf');
+}
+/*Main*/
+body {
+  background-color: #3d435c !important;
+}
+#content{
+  background-color: #ffffff;
+  font-family: Exo2Medium !important;
+  padding-top: 19px;
+}
+#content .product{
+  margin-bottom: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  width:300px;
+}
+#content .top{
+  font-family: HelveticaNeueLight;
+  font-size: 15px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: #3c2f20;
+  margin-top: 5px;
+}
+#content a{
+  text-decoration: none;
+}
+#content h1 {
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+#content a p{
+  font-size: 20px;
+  line-height: 24px;
+}
+#content a span{
+  border-bottom: 1px #3c2f20 dotted;
+  color: #3c2f20;
+}
+#content a:hover span{
+  border-bottom: 1px #5b84f0 dotted;
+  color: #5b84f0;
+}
+#content .bonfesto {
+  width: 72px;
+  height: 24px;
+  display: block;
+  background-image: url("../img/bonfesto.png");
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+#content .description{
+  font-family: HelveticaNeueLight;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width:1200px !important;
+    min-width: 1200px !important;
+  }
+  #content .subcontainer{
+    width:960px !important;
+  }
+}
+@media (max-width: 1280px) {
+  #content .subcontainer{
+    width:640px !important;
+  }
+}
+@media (max-width: 768px) {
+  #content .subcontainer{
+    width:300px !important;
+  }
+  #content .product {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
