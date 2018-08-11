@@ -27,6 +27,11 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                    [
+                        'allow' => true,
+                        'actions' => ['login', 'signup'],
+                        'roles' => ['?'],
+                    ],
                 ],
             ],
             'verbs' => [
@@ -125,4 +130,5 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
 }

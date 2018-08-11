@@ -30,7 +30,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => ['/books/index'],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -38,7 +38,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Главная', 'url' => ['/site/index']],
+            ['label' => 'Тестовое задание', 'url' => ['/books/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Вход', 'url' => ['/books/index']]
             ) : (
