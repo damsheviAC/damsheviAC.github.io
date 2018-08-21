@@ -163,6 +163,9 @@
   #block6 .slider{
     max-width: 780px;
   }
+  #block8 .slider-container{
+  	width: 900px;
+  }
 }
 
 @media screen and (max-width: 1055px) {
@@ -201,6 +204,9 @@
   #block4 {
     padding-top: 0px;
   }
+  #block8 .slider-container{
+    width: 600px;
+  }
 }
 
 
@@ -226,9 +232,14 @@
   #block1 .slogan{
     margin-bottom: 190px;
   }
-
-
 }
+
+@media screen and (max-width: 640px) {
+  #block8 .slider-container{
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .c-hamburger{
     width: 30px;

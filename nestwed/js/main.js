@@ -55,16 +55,24 @@ $(document).ready(function () {
 
 
 
-
-    //Slider block6
-    $('#block6 .slider').slick({
+    //Slider block8
+    $('#block8 .slider').slick({
       dots: true,
       arrows: false,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       responsive: [
       {
         breakpoint: 1240,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 993,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -73,7 +81,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 820,
+        breakpoint: 641,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -81,13 +89,25 @@ $(document).ready(function () {
           dots: true,
         }
       },
-
       ]
     });
 
-
       //comment
-      $('#block7 .question-container').on('click', function () {
-        $(this).find('.answer').toggleClass("active");
+      $('#block7 .question').on('click', function () {
+        $(this).next().toggleClass("active");
+      });
+
+
+      //Scroll
+      $('.nav-item-link').on('click', function (event) {
+          //отменяем стандартную обработку нажатия по ссылке
+          event.preventDefault();
+          //забираем идентификатор бока с атрибута href
+          var id  = $(this).attr('href'),
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+              top = $(id).offset().top;
+          //анимируем переход на расстояние - top за 1500 мс
+          $('body,html').animate({scrollTop: top}, 1500);
+
       });
 });
