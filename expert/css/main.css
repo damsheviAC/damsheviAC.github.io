@@ -1,0 +1,326 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans.eot');
+    src: url('../fonts/GillSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans.woff2') format('woff2'),
+        url('../fonts/GillSans.woff') format('woff'),
+        url('../fonts/GillSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans-SemiBold.eot');
+    src: url('../fonts/GillSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/GillSans-SemiBold.woff') format('woff'),
+        url('../fonts/GillSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans-Bold.eot');
+    src: url('../fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans-Bold.woff2') format('woff2'),
+        url('../fonts/GillSans-Bold.woff') format('woff'),
+        url('../fonts/GillSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans-UltraBold.eot');
+    src: url('../fonts/GillSans-UltraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans-UltraBold.woff2') format('woff2'),
+        url('../fonts/GillSans-UltraBold.woff') format('woff'),
+        url('../fonts/GillSans-UltraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Common*/
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 20px;
+}
+
+/* Header */
+
+.container, .header__navcontainer {
+    width: 1170px;
+    margin: auto;
+}
+
+.c-hamburger{
+    display: none;
+}
+
+.header__navcontainer, .header__logobox, .header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navcontainer {
+    align-items: flex-end;
+}
+
+.header__navrow {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+}
+
+.header {
+    background: url('../img/header_bg.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    color: #fff;
+    padding-bottom: 105px;
+}
+
+.header__logobox {
+    align-items: center;
+}
+
+.header__logoimgbox {
+    margin-right: 16px;
+}
+
+.header__logotextbox {
+    max-width: 245px;
+}
+
+.header__logotextup {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.header__logotextdown {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.header__nav {
+    margin-bottom: 10px;
+}
+
+.header__navitem {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+.header__navlink, .footer__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header__navlink:hover, .footer__link:hover {
+    font-weight: 800;
+}
+
+.header__contacts {
+    padding-bottom: 10px;
+}
+
+.header__contacts a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+
+.header__phone {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header__email {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+}
+
+.header__titlebox {
+    width: 50%;
+    margin: 90px 0 56px;
+}
+
+h1, h2 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+h4 {
+    font-size: 28px;
+    font-weight: normal;
+}
+h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header button {
+    margin-left: 90px;
+}
+
+button {
+    background: linear-gradient(to top, #d6ecfb, #4b7d9b, #d6ecfb);
+    height: 62px;
+    width: 360px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    outline: none;
+    background: linear-gradient(to top, #aed7f3, #33617e, #aed7f3);
+}
+
+/* About */
+
+.about {
+    padding-top: 160px;
+    padding-bottom: 30px;
+}
+
+.about__row {
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about__imgbox {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    bottom: -60px;
+}
+
+.about__article {
+    font-size: 22px;
+}
+
+.about__textbox {
+    position: relative;
+    width: 48%;
+}
+
+.about__molecule {
+    position: absolute;
+    top: -56px;
+    left: 220px;
+}
+
+/* Pluses */
+
+.pluses {
+    padding-top: 140px;
+    padding-bottom: 110px;
+    background: url('../img/pluses_bg.png') no-repeat center;
+	-webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.pluses__iconsrow {
+	display: flex;
+	justify-content: space-around;
+}
+
+.pluses__iconbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px
+}
+
+.pluses__icon {
+    height: 96px;
+    width: auto;
+}
+
+.pluses__icontext {
+    text-align: center;
+}
+
+/* Diploma */
+
+.diploma__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.diploma__imgbox{
+    margin-right: 15px;
+}
+
+.diploma__imgbox img{
+  position: relative;
+  top: -11px;
+}
+
+.diploma__textbox {
+  font-size: 22px;
+}
+
+.diploma__article{
+  white-space: pre-line;
+}
+/* Footer */
+
+footer {
+    background: #072433;
+    padding: 40px 0;
+}
+
+.footer__upperrow {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer__links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__linksrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__link{
+  width: 100%;
+}
+.footer__lowerrow{
+  color: #c1c8cc;
+  font-weight: 300;
+  font-size: 12px;
+  max-width: 750px;
+  border-top: 1px solid #2c4551;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-top: 12px;
+}
+.footer__lowerrow p{
+  text-align: center;
+  margin: 0;
+}
+.footer__linksrowup, .footer__linksrowdown {
+    display: flex;
+    justify-content: space-between;
+}
