@@ -195,8 +195,8 @@
 		width: 100%;
 		margin-top: 30px;
 	}
-	.header{
-		padding-bottom: 60px;
+	.main{
+		padding-bottom: 60px !important;
 	}
 	.header button{
 		width: 290px;
@@ -334,9 +334,62 @@
 	.services__right {
 		height:90px;
 	}
-
-
 	/*services*/
+
+
+
+
+
+
+
+	/*zapros*/
+	#zapros{
+		width: 270px;
+		padding: 20px 20px;
+		margin-left: -155px;
+	}
+	#zapros form input{
+		width: 258px;
+	}
+	#zapros select {
+    	width: 270px;
+	}
+	#zapros textarea {
+    	width: 256px;
+    	margin-bottom: 20px;
+	}
+	#zapros button {
+    	height: 50px;
+    	width: 269px;
+	}
+
+	/*zapros*/
+
+
+
+
+
+
+		/*otzyv*/
+	#otzyv{
+		width: 270px;
+		padding: 20px 20px;
+		margin-left: -155px;
+	}
+	#otzyv form input{
+		width: 258px;
+	}
+	#otzyv textarea {
+    	width: 256px;
+    	margin-bottom: 20px;
+	}
+	#otzyv button {
+    	height: 50px;
+    	width: 269px;
+	}
+
+	/*zapros*/
+
 
 
 }
@@ -458,9 +511,15 @@
 	.services__right {
 		height:120px;
 	}
-
-
 	/*services*/
 
+
+
+	/*feedback*/
+	.container_feedback .slide{
+		transform: scale(0.9);
+		margin-bottom: 40px;
+	}
+	/*feedback*/
 
 }

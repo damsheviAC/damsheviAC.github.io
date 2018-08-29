@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/documentation.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     
 </head>
 <body>
@@ -114,7 +116,7 @@
                         </div>
                         <p>В течении одного дня на электронную почту, с которой поступил запрос, вам будут направлены уточняющие вопросы (при необходимости) и результаты предварительного рассмотрения документов. В случае, если информации достаточно, Вам направляются договор и счет для оплаты.</p>
                         <p>Также возможна подача заявки через электронную форму!</p>
-                        <div class="button__containerrow">
+                        <div id="documentation_button" class="button__containerrow">
                             <button>Отправить запрос</button> 
                         </div>
                     </div>
@@ -193,6 +195,64 @@
             </div>            
         </div>
     </section>
+    <div id="el-zapros">
+        <p>Заполните форму электронной подачи заявки</p>
+        <p class="exit"><span>+</span></p>
+        <form>
+            <table>
+                <tr>
+                    <td class="cell-text">Название компании, на имя которой разрабатывается Паспорт безопасности (Изготовитель, Поставщик 
+                        или Продавец продукции )*</td>
+                    <td><input type="text" name="organization" placeholder="Введите название организации"></td>
+                </tr>
+                <tr>
+                    <td class="cell-text">Наименование компании, направляющей запрос (заполняется только посреднической организацией)</td>
+                    <td><input type="text" name="posrednik" placeholder="Введите название организации"></td>
+                </tr>
+                <tr>
+                    <td class="cell-text">Электронная почта*</td>
+                    <td><input type="email" name="email" placeholder="Введите Ваш e-mail*"></td>
+                </tr>
+                <tr>
+                    <td class="cell-text">Контактный телефон*</td>
+                    <td><input type="tel" name="phone" placeholder="+ 7 (_ _ _) - (_ _ _) - (_ _) - (_ _)"></td>
+                </tr>
+                <tr>
+                    <td class="cell-text">Контактное лицо*</td>
+                    <td><input type="text" name="name" placeholder="Введите ФИО контактного лица"></td>
+                </tr> 
+                <tr>
+                    <td class="cell-text">Наименование продукции*</td>
+                    <td><input type="text" name="product" placeholder="Введите перечень продукции"></td>
+                </tr>  
+                <tr>
+                    <td class="cell-text">Нормативный документ, по которому выпускается продукция (ГОСТ, ТУ, СТО, (M) SDS)</td>
+                    <td><input type="file" name="document"></td>
+                </tr>
+                <tr>
+                    <td class="cell-text">Информационное письмо о составе продукции</td>
+                    <td><input type="file" name="product-list"></td>
+                </tr> 
+                <tr>
+                    <td class="cell-text">Карта партнера (для составления договора)</td>
+                    <td><input type="file" name="partner-map"></td>
+                </tr> 
+                <tr>
+                    <td class="cell-text">Доверенность (в случае, если заявку подает посредническая организация)</td>
+                    <td><input type="file" name="doverenost"></td>
+                </tr>  
+                <tr>
+                    <td class="cell-text last">Ваш комментарий*</td>
+                    <td><textarea type="text" name="comment" placeholder="Напишите свой комментарий"></textarea></td>
+                </tr>                                                                  
+            </table>
+            <p class="sub-text">* - поля, обязательные для заполнения</p>   
+            <div class="button__containerrow">
+                <button type='submit'>Отправить</button>
+            </div>                                   
+
+        </form>
+    </div> 
     <footer>
         <div class="container">
             <div class="footer__upperrow">
@@ -236,5 +296,6 @@
     </footer>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>

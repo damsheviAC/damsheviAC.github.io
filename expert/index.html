@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <!--Header-->
-    <header class="header">
+    <header class="header main">
         <div class="header__navrow">
             <div class="header__navcontainer">
                 <div class="header__logobox">
@@ -69,7 +71,7 @@
 
             </div>
         </div>
-        <div class="container">
+        <div id='main_button' class="container">
             <div class="header__titlebox">
                 <h1>
                     Разработка и регистрация Паспорта безопасности, консультационные услуги в области химической продукции
@@ -178,6 +180,22 @@
             </div>
         </div>
     </section>
+    <div id="zapros">
+        <p>Оставьте заявку и мы обязательно свяжемся с Вами</p>
+        <p class="exit"><span>+</span></p>
+        <form>
+            <input type="text" name="name" placeholder="Введите Ваше Имя*">
+            <input type="tel" name="phone" placeholder="Введите Ваш номер телефона*">
+            <input type="email" name="email" placeholder="Введите Ваш email*">
+            <select>
+                <option disabled selected>Выберите тему запроса</option>
+                <option>1 тема</option>
+                <option>2 тема</option>
+            </select>
+            <textarea name="message" placeholder="Введите Ваше сообщение"></textarea>
+            <button type='submit'>Отправить</button>
+        </form>
+    </div>   
     <footer>
         <div class="container">
             <div class="footer__upperrow">
@@ -200,7 +218,7 @@
                       <a href="services.html" class="footer__link">Услуги</a>
                     </div>
                     <div class="footer__linksrow">
-                      <a href="docmentation.html" class="footer__link">Документация</a>
+                      <a href="documentation.html" class="footer__link">Документация</a>
                       <a href="partners.html" class="footer__link">Партнеры</a>
                     </div>
                     <div class="footer__linksrow">
@@ -221,5 +239,6 @@
     </footer>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
