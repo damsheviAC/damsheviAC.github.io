@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Home</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type='text/javascript'>
+      if(window.innerWidth<1240){
+        location.href='http://sia.h1n.ru/mobile/basket.html';
+      }
+    </script>
+    <script src="https://delivery.yandex.ru/widget/loader?resource_id=51208&sid=38236&key=76c0ed031208b06d69d5c7bc39ffefcf"></script>
+    <script type="text/javascript" src="js/basket.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header>
+          <div class="nav">
+            <button class="c-hamburger c-hamburger--htx">
+              <span>toggle menu</span>
+            </button>
+            <a href="index.html" class="logo">
+              <div class="biz"><p>Biz</p></div>
+              <div><p>Poster</p></div>
+            </a>
+            <ul class="nav-collapse">
+              <li class="nav-item">
+                <a class="nav-item-link" href="index.html#block4">О продукте</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="index.html#block6">Выгоды</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="index.html#block7">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="index.html#block10">Галерея</a>
+              </li>
+            </ul>
+            <div class="callback">
+              <div class="phone">
+                <img src="img/phone.png" alt="phone">
+                <a href="tel:+79165208711">+7 (916) 520 - 87 - 11</a>
+              </div>
+              <p>Позвоните мне</p>
+            </div>
+            <div class="button">Купить</div>
+            <a data-standart='0' data-mini='0' class="basket">
+              <img src="img/basket.png" alt="">
+              <p class="count"></p>
+              <p>В корзине</p>
+            </a>
+          </div>
+        </header>
+        <div id="call-me">
+          <p class="h4">Заказать звонок</p>
+          <form method="post" action="call-me.php">
+            <input type="text" name="name" value="" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" value="" placeholder="Ваш телефон" required>
+            <input type="email" name="email" value="" placeholder="Ваш email" required>
+            <textarea name="coment" rows="" cols="" placeholder="Комментарий"></textarea>
+            <button type="submit">Заказать звонок</button>
+            <div class="exit">
+              <p>+</p>
+            </div>
+          </form>
+        </div>
+        <div id="callback-success" class="alert">
+          <p class="h3">Спасибо!</p>
+          <p class="h4">Ваше сообщение доставлено. Мы свяжемся с Вами в ближайшее время.</p>
+          <div class="exit">
+            <p>+</p>
+          </div>
+        </div>
+        <div id="callback-error" class="alert">
+          <p class="h4">Ошибка!</p>
+          <p class="h4">Ваше сообщение не доставлено. Попробуйте ещё раз.</p>
+          <div class="exit">
+            <p>+</p>
+          </div>
+        </div>
+        <div id="basket">
+          <div class="container">
+            <div class="breadcrumbs">
+              <a href="index.html" class="passive">Главная/</a>
+              <p class="active">Корзина</p>
+            </div>
+            <div class="basket-container">
+              <p class="h4">Корзина</p>
+              <p class="basket_null">В корзине ничего нет</p>
+              <div class="basket-block">
+                <div class="calculator-head">
+                  <div class="head-date">
+                    <p></p>
+                  </div>
+                  <div title="" class="reset">
+                    <img src="img/basket-icon.png" alt="">
+                    <p>Удалить все</p>
+                  </div>
+                </div>
+                <div id="calculator-standart" class="calculator-size">
+                  <div class="calculator-img">
+                    <img src="img/calculator-img.png" alt="">
+                  </div>
+                  <div class="calculator-content">
+                    <div class="add">
+                      <div class="st-size">
+                        <p>Стандарт</p>
+                        <p>Размер:</p>
+                      </div>
+                      <div class="add-count">
+                        <p title="" class="minus1">-</p>
+                        <div class="count"><p>0</p></div>
+                        <p title="" class="plus1">+</p>
+                      </div>
+                      <div data-price="7000" data-sale="3000" class="price">
+                        <div class="new-price">
+                          0 р.
+                        </div>
+                        <div class="sale">
+                          Скидка 0  р.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="size">
+                      <p>Ширина<span>1190 см</span> Высота <span>840 см</span></p>
+                    </div>
+                    <div title="" class="reset-this">
+                      <img src="img/basket-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="calculator-mini" class="calculator-size">
+                  <div class="calculator-img">
+                    <img src="img/calculator-img.png" alt="">
+                  </div>
+                  <div class="calculator-content">
+                    <div class="add">
+                      <div class="st-size">
+                        <p>Мини</p>
+                        <p>Размер:</p>
+                      </div>
+                      <div class="add-count">
+                        <p title="" class='minus1'>-</p>
+                        <div class="count"><p>0</p></div>
+                        <p title="" class='plus1'>+</p>
+                      </div>
+                      <div data-price="5000" data-sale="1500" class="price">
+                        <div class="new-price">
+                          0 р.
+                        </div>
+                        <div class="sale">
+                          Скидка 0 р.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="size">
+                      <p>Ширина <span>840 см</span> Высота <span>595 см</span></p>
+                    </div>
+                    <div title="" class="reset-this">
+                      <img src="img/basket-icon.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator-footer">
+                  <div class="footer-left">
+                    <p>0 товаров в корзине</p>
+                  </div>
+                  <div class="footer-right">
+                    <p class="footer-right-bottom">0 р.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-block">
+                <p class="h5">Оформление заказа</p>
+                <p class="h6">Получатель</p>
+                <!-- элемент для отображения ошибок валидации -->
+                <div id="yd_errors"></div>
+                <form id="order" method="post" action="success.php">
+                  <div class="content">
+                    <fieldset>
+                      <div class="form-input">
+                        <p class="label">Электронная почта</p>
+                        <input type="email" name="email" required id="email">
+                      </div>
+                      <div class="form-input">
+                        <p class="label">Телефон</p>
+                        <input type="tel" name="phone" required id="phone">
+                      </div>
+                      <div class="form-input">
+                        <p class="label">Имя</p>
+                        <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+                      </div>
+                      <div class="form-input adress">
+                        <p class="label">Адрес</p>
+                        <input type="text" name="city" placeholder="город" id="city">
+                        <div>
+                          <input type="text" id="street" placeholder="улица" autocomplete="off">
+                        </div>
+                        <div>
+                          <input type="text" id="house" placeholder="дом" autocomplete="off">
+                        </div>
+                        <div>
+                          <input type="text" id="floor" placeholder="квартира/офис" autocomplete="off">
+                        </div>
+                        <div>
+                          <input type="text" id="index" placeholder="индекс" autocomplete="off">
+                        </div>                         
+                      </div>                                                                 
+                      <input type="hidden" name="standart" value="0">
+                      <input type="hidden" name="mini" value="0">
+                    </fieldset>
+                    <fieldset>
+                      <div class="click-data">
+                        <!-- атрибут data-ydwidget-open обеспечивает открытие виджета при клике на элемент -->
+                        <label data-ydwidget-open>
+                          <input type="radio" name="delivery" id="yd_delivery">
+                          <div class="click-data-div">
+                            <p>Выбрать способ доставки</p>
+                          </div>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="submit-container">
+                    <div class="submit-order">
+
+                      <p class="dostavka"><p id="delivery_description"></p></p>
+                      <p class="submit-total fz10">Итого к оплате <span>-----------</span><span class="bold fz18">0 р.</span></p>
+                    </div>
+                    <button type="button" name="button" data-ydwidget-createorder disabled>Заполните данные</button>
+                  </div>
+                </form>
+                <!-- Элемент-контейнер виджета. Класс yd-widget-modal обеспечивает отображение виджета в модальном окне -->
+                <div id="ydwidget" class="yd-widget-modal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="send-success" class="alert">
+          <p class="h3">Спасибо!</p>
+          <p class="h4">Ваш заказ принят. Мы свяжемся с Вами в ближайшее время.</p>
+          <div class="exit">
+            <p>+</p>
+          </div>
+        </div>
+        <div id="send-error" class="alert">
+          <p class="h2">Ошибка!</p>
+          <p class="h4">Данные введены не верно, попробуйте ещё раз.</p>
+          <div class="exit">
+            <p>+</p>
+          </div>
+        </div>
+        <div id="callback">
+          <p class="h4">Обратная связь</p>
+          <form method="post" action="callback.php">
+            <input type="text" name="name" value="" placeholder="Ваше имя" required>
+            <input type="" name="phone" value="" placeholder="Ваш телефон" required>
+            <input type="email" name="email" value="" placeholder="Ваш email" required>
+            <textarea name="coment" rows="" cols="" placeholder="Комментарий"></textarea>
+            <button type="submit">Отправить</button>
+            <div class="exit">
+              <p>+</p>
+            </div>
+          </form>
+        </div>
+        <footer>
+            <div class="nav">
+              <a href="index.html" class="logo">
+                <div class="biz"><p>Biz</p></div>
+                <div><p>Poster</p></div>
+              </a>
+              <ul class="nav-collapse">
+                <li class="nav-item">
+                  <a class="nav-item-link" href="index.html#block4">О продукте</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link" href="index.html#block6">Выгоды</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link" href="index.html#block7">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link" href="index.html#block10">Галерея</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-link call-form">Обратная связь</a>
+                </li>
+              </ul>
+              <div class="callback">
+                <div class="phone">
+                  <img src="img/phone.png" alt="phone">
+                  <a href="tel:+79165208711">+7 (916) 520 - 87 - 11</a>
+                </div>
+                <p>Позвоните мне</p>
+              </div>
+              <div class="button-container">
+                <div class="button">Купить</div>
+              </div>
+            </div>
+        </footer>      
+    </div>
+
+
+       
+     
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+  </body>
+</html>
