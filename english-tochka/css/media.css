@@ -1,0 +1,151 @@
+@media (max-width: 1260px) {
+	#slider .container{
+		max-width: 500px;
+	}
+	.slide{
+		flex-wrap: wrap;
+	}
+	.slide img{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 1150px) {
+	.form__input_container{
+		max-width: 400px
+	}
+	.fututre-result__container{
+		display: flex;
+		flex-wrap: wrap;
+		position: static;
+		justify-content: center;
+		margin-top: 360px;
+	}
+	.result{
+		position: static;
+		margin: 20px 10px;
+		height: auto; 
+	}
+	.result:before{
+		display: none;
+	}
+	.result:after{
+		display: none;
+	}	
+}
+
+
+@media (max-width: 900px) {
+	#people .container{
+		padding-bottom: 65px;
+	}
+	.people__header{
+		font-size: 30px;
+	}
+	.people{
+		width: 100%;
+	}
+}
+@media (max-width: 840px) {
+	#future-result{
+		background-size: contain;
+		background-position: 0 160px;
+	}
+	.fututre-result__container{
+		background-color: #191a21;
+		position: relative;
+		bottom: 0;
+		margin-top: 161px;
+	}
+	.fututre-result__container:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -15px;
+		height: 100%;
+		width: 15px;
+		background-color: #191a21;
+	}
+	.fututre-result__container:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -15px;
+		height: 100%;
+		width: 15px;
+		background-color: #191a21;
+	}	
+}
+@media (max-width: 659px) {
+	#future-result .container {
+		padding-top: 50px;
+	}	
+}
+@media (max-width: 620px) {
+	#slider .container{
+		max-width: 300px;
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+	#slider h2{
+		font-size: 28px;
+	}
+	.slide img{
+		width: 270px;
+		height: 294px;
+	}
+	#slider .slick-prev{
+		left: 5px;
+	}
+	#slider .slick-next{
+		right: 5px;
+	}
+	#slider .slick-arrow{
+		top: 250px;
+		z-index: 2;
+	}
+	.slide__content{
+		margin-top: 20px;
+	}
+	#price .container{
+		justify-content: center;
+	}
+}
+@media (max-width: 497px) {
+	#way{
+		padding-top: 50px;
+		min-height: 660px;
+	}
+	.block__content_ol ol {
+    	padding: 5px 5px 5px 20px;		
+	}
+	.block__content_ol:before{
+		display: none;
+	}
+	.block__content_ol ol li{
+		font-size: 16px;
+	}	
+}
+@media (max-width: 457px) {
+	h2{
+		font-size: 28px;
+	}
+	.fututre-result__container {
+		margin-top: 142px;
+	}
+}
+@media (max-width: 400px) {
+	.form__input{
+		width: 280px;
+	}
+	.select__point {
+		right: calc(50% - 130px);
+	}
+}
+@media (max-width: 380px) {
+	.header__top p {
+		font-size: 21px;
+	}
+	.header__middle h1 {
+		font-size: 38px;
+	}	
+}
